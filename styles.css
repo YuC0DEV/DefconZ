@@ -175,6 +175,11 @@ main {
   font-size: 15px;
 }
 
+#server-name {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
 .panel__sub {
   margin-top: 6px;
   color: var(--muted);
