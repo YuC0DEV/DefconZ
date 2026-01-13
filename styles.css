@@ -637,3 +637,17 @@ main {
   .hero { padding: 60px 20px 30px; }
   .section { padding: 28px 20px 6px; }
 }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(12px);
+  background: rgba(5, 7, 20, 0.86);
+  border-bottom: 1px solid rgba(var(--frost-rgb), 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px clamp(14px, 3.2vw, 48px);
+  color: rgba(223, 229, 255, 0.88);
+}
