@@ -1,3 +1,20 @@
+/* Firma TikTok en el footer */
+.firma-tiktok {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.firma-tiktok-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.firma-tiktok-link:hover {
+  color: var(--accent-2);
+  text-decoration: underline;
+}
 .status-label--light {
   color: #b0b4c2;
 }
@@ -56,10 +73,11 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 14px 6vw;
+  gap: 32px;
 }
 
 .brand {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 700;
@@ -650,4 +668,32 @@ main {
   justify-content: space-between;
   padding: 10px clamp(14px, 3.2vw, 48px);
   color: rgba(223, 229, 255, 0.88);
+}
+
+.topbar__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.tiktok-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px;
+  background: none;
+  border-radius: 50%;
+  transition: box-shadow 0.2s;
+}
+
+.tiktok-icon-link svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 2px 8px var(--glow));
+}
+
+.tiktok-icon-link:hover svg {
+  filter: drop-shadow(0 4px 16px var(--accent));
 }
